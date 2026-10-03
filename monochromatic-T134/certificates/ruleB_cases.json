@@ -1,0 +1,360 @@
+{
+ "coordinates": "a point [a,b] is (a + b*w)/7, w = exp(i*pi/3)",
+ "rotation": "q = (3+5w)/7 = pi/conj(pi), pi = 2+w; q*Lambda shares the index-7 sublattice pi*Lambda with Lambda",
+ "turn": "rows 0,1,2 of Lambda coloured h(a + s_b) with offsets s = (0,4,1); h red on 0..3 mod 8",
+ "rules": [
+  "triangle: two equally coloured vertices of a T(1), T(3), T(4) or collinear T(1,3,4) force the third",
+  "four_apart: points of q*Lambda four steps apart along its long direction q*w^j have opposite colours"
+ ],
+ "common": [
+  {
+   "point": [
+    -14,
+    -7
+   ],
+   "colour": "R",
+   "rule": "triangle",
+   "using": [
+    [
+     -21,
+     0
+    ],
+    [
+     -14,
+     0
+    ]
+   ]
+  },
+  {
+   "point": [
+    -7,
+    21
+   ],
+   "colour": "B",
+   "rule": "triangle",
+   "using": [
+    [
+     -7,
+     14
+    ],
+    [
+     0,
+     14
+    ]
+   ]
+  },
+  {
+   "point": [
+    14,
+    -7
+   ],
+   "colour": "B",
+   "rule": "triangle",
+   "using": [
+    [
+     7,
+     0
+    ],
+    [
+     14,
+     0
+    ]
+   ]
+  },
+  {
+   "point": [
+    21,
+    -7
+   ],
+   "colour": "B",
+   "rule": "triangle",
+   "using": [
+    [
+     14,
+     0
+    ],
+    [
+     21,
+     0
+    ]
+   ]
+  },
+  {
+   "point": [
+    21,
+    -14
+   ],
+   "colour": "R",
+   "rule": "triangle",
+   "using": [
+    [
+     14,
+     -7
+    ],
+    [
+     21,
+     -7
+    ]
+   ]
+  }
+ ],
+ "cases": [
+  {
+   "long_direction": "q",
+   "j": 0,
+   "steps": [
+    {
+     "point": [
+      16,
+      -6
+     ],
+     "colour": "R",
+     "rule": "four_apart",
+     "using": [
+      [
+       28,
+       14
+      ]
+     ]
+    },
+    {
+     "point": [
+      -2,
+      13
+     ],
+     "colour": "B",
+     "rule": "four_apart",
+     "using": [
+      [
+       -14,
+       -7
+      ]
+     ]
+    },
+    {
+     "point": [
+      1,
+      18
+     ],
+     "colour": "R",
+     "rule": "triangle",
+     "using": [
+      [
+       -7,
+       21
+      ],
+      [
+       -2,
+       13
+      ]
+     ]
+    }
+   ],
+   "contradiction": {
+    "kind": "triangle",
+    "points": [
+     [
+      1,
+      18
+     ],
+     [
+      16,
+      -6
+     ],
+     [
+      21,
+      -14
+     ]
+    ]
+   }
+  },
+  {
+   "long_direction": "q*w",
+   "j": 1,
+   "steps": [
+    {
+     "point": [
+      13,
+      -11
+     ],
+     "colour": "R",
+     "rule": "four_apart",
+     "using": [
+      [
+       -7,
+       21
+      ]
+     ]
+    },
+    {
+     "point": [
+      1,
+      18
+     ],
+     "colour": "B",
+     "rule": "four_apart",
+     "using": [
+      [
+       21,
+       -14
+      ]
+     ]
+    },
+    {
+     "point": [
+      -11,
+      -2
+     ],
+     "colour": "B",
+     "rule": "triangle",
+     "using": [
+      [
+       13,
+       -11
+      ],
+      [
+       21,
+       -14
+      ]
+     ]
+    },
+    {
+     "point": [
+      -3,
+      -5
+     ],
+     "colour": "R",
+     "rule": "triangle",
+     "using": [
+      [
+       -35,
+       7
+      ],
+      [
+       -11,
+       -2
+      ]
+     ]
+    },
+    {
+     "point": [
+      -8,
+      3
+     ],
+     "colour": "B",
+     "rule": "triangle",
+     "using": [
+      [
+       -3,
+       -5
+      ],
+      [
+       0,
+       0
+      ]
+     ]
+    }
+   ],
+   "contradiction": {
+    "kind": "triangle",
+    "points": [
+     [
+      -11,
+      -2
+     ],
+     [
+      -8,
+      3
+     ],
+     [
+      1,
+      18
+     ]
+    ]
+   }
+  },
+  {
+   "long_direction": "q*w^2",
+   "j": 2,
+   "steps": [
+    {
+     "point": [
+      -17,
+      -12
+     ],
+     "colour": "B",
+     "rule": "four_apart",
+     "using": [
+      [
+       -49,
+       0
+      ]
+     ]
+    },
+    {
+     "point": [
+      -3,
+      -5
+     ],
+     "colour": "R",
+     "rule": "four_apart",
+     "using": [
+      [
+       -35,
+       7
+      ]
+     ]
+    },
+    {
+     "point": [
+      -32,
+      12
+     ],
+     "colour": "B",
+     "rule": "four_apart",
+     "using": [
+      [
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "point": [
+      -8,
+      3
+     ],
+     "colour": "B",
+     "rule": "triangle",
+     "using": [
+      [
+       -3,
+       -5
+      ],
+      [
+       0,
+       0
+      ]
+     ]
+    }
+   ],
+   "contradiction": {
+    "kind": "triangle",
+    "points": [
+     [
+      -32,
+      12
+     ],
+     [
+      -17,
+      -12
+     ],
+     [
+      -8,
+      3
+     ]
+    ]
+   }
+  }
+ ]
+}
